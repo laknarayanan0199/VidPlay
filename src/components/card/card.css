@@ -1,0 +1,46 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.card {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+  background-color: #c1cdd1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.video {
+  border-radius: 0.5rem;
+}
+
+.action_btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.action_btns button {
+  width: 5rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.delete__all {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+}
+
+.delete__all button {
+  width: 5rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

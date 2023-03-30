@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router";
+import EduBucket from "./components/pages/bucket/EduBucket";
+import EntertainmentBucket from "./components/pages/bucket/EntertainmentBucket";
+import NewsBucket from "./components/pages/bucket/NewsBucket";
+import TrendBucket from "./components/pages/bucket/TrendBucket";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<TrendBucket />} />
+      <Route path="/Education" element={<EduBucket />} />
+      <Route path="/Entertainment" element={<EntertainmentBucket />} />
+      <Route path="/News" element={<NewsBucket />} />
+    </Routes>
   );
 }
 

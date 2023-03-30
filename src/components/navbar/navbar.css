@@ -1,0 +1,30 @@
+.headings {
+  width: 15rem;
+  display: flex;
+  justify-items: flex-start;
+  font-size: 1.5rem;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  height: 2rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #b4c0c5;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+.categories a {
+  text-decoration: none;
+  color: #565c5e;
+  font-size: 1.1rem;
+}
+
+.categories a.active {
+  color: black;
+  font-weight: 600;
+}

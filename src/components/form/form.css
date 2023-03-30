@@ -1,0 +1,58 @@
+.form__container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  transform: translate(-50%, -50%);
+  height: 25rem;
+  width: 25rem;
+  padding: 2rem;
+  background-color: #ccd8db;
+  border-radius: 1rem;
+}
+
+.form__container label {
+  display: inline-block;
+  width: 5rem;
+  padding: 0.5rem;
+}
+
+.form__container input {
+  width: 12rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.form__container select {
+  width: 12.5rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+}
+
+.submit_btn {
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.form__container button {
+  width: 5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  width: 22rem;
+  margin-top: 0.3rem;
+  color: red;
+}
