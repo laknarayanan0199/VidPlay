@@ -1,22 +1,23 @@
 .headings {
-  width: 15rem;
+  height: 3rem;
   display: flex;
-  justify-items: flex-start;
-  font-size: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  background-color: #b4c0c5;
+  position: sticky;
+  top: 0;
+  z-index: 11;
 }
 
 .categories {
   display: flex;
   align-items: center;
   gap: 4rem;
-  height: 2rem;
   margin: 0;
-  padding: 1rem;
-  text-align: center;
-  background-color: #b4c0c5;
-  position: sticky;
-  top: 0;
-  z-index: 11;
+  padding: 0 1rem;
+  /* background-color: #b4c0c5; */
 }
 .categories a {
   text-decoration: none;
@@ -27,4 +28,23 @@
 .categories a.active {
   color: black;
   font-weight: 600;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 50rem) {
+  .headings {
+    gap: 1rem;
+  }
+  .headings h3 {
+    margin: 0;
+  }
+  .categories {
+    gap: 1rem;
+  }
+  .categories a {
+    font-size: 1rem;
+  }
 }

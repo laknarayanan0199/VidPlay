@@ -35,6 +35,26 @@ export const apiSlice = createApi({
       }),
       invalidatesTags: ["Links"],
     }),
+    getHistoryLinks: builder.query({
+      query: () => "/History",
+      providesTags: ["History"],
+    }),
+    addHistoryLinks: builder.mutation({
+      query: (links) => ({
+        url: "/History",
+        method: "POST",
+        body: links,
+      }),
+      invalidatesTags: ["History"],
+    }),
+    deleteHistoryLinks: builder.mutation({
+      query: ({ id }) => ({
+        url: `/History/${id}`,
+        method: "DELETE",
+        body: id,
+      }),
+      invalidatesTags: ["History"],
+    }),
   }),
 });
 
@@ -43,4 +63,7 @@ export const {
   useAddBucketLinksMutation,
   useUpdateBucketLinksMutation,
   useDeleteBucketLinksMutation,
+  useGetHistoryLinksQuery,
+  useAddHistoryLinksMutation,
+  useDeleteHistoryLinksMutation,
 } = apiSlice;

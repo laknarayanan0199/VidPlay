@@ -4,15 +4,16 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <>
+    <div className="headings">
+      <h3>Buckets</h3>
       <div className="categories">
-        <h3 className="headings">Buckets</h3>
-        <NavLink to={"/"}>Trending</NavLink>
+        <NavLink to={"/trending"}>Trending</NavLink>
         <NavLink to={"/education"}>Education</NavLink>
         <NavLink to={"/entertainment"}>Entertainment</NavLink>
         <NavLink to={"/news"}>News</NavLink>
+        <NavLink to={"/History"}>History</NavLink>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -90,5 +90,31 @@
       "link": "https://www.youtube.com/embed/NZLbTuBDhJg",
       "id": 18
     }
+  ],
+  "History": [
+    {
+      "id": 7,
+      "name": "Anti Hero - Taylor swift",
+      "category": "Trending",
+      "link": "https://www.youtube.com/embed/b1kbLwvqugk"
+    },
+    {
+      "id": 11,
+      "name": "Why your voice is like a fingerprint",
+      "category": "Trending",
+      "link": "https://www.youtube.com/embed/mp-yVMiIo0A"
+    },
+    {
+      "id": 4,
+      "name": "How Quantum Computers Break The Internet... Starting Now ",
+      "category": "Education",
+      "link": "https://www.youtube.com/embed/-UrdExQW0cs"
+    },
+    {
+      "id": 1,
+      "name": "Ghosted",
+      "category": "Entertainment",
+      "link": "https://www.youtube.com/embed/IAdCsNtEuBU"
+    }
   ]
 }

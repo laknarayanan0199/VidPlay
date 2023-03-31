@@ -1,17 +1,30 @@
 import { Modal } from "@mui/material";
 import React, { useState } from "react";
-import { useDeleteBucketLinksMutation } from "../features/api/apiSlice";
+import {
+  useAddHistoryLinksMutation,
+  useDeleteBucketLinksMutation,
+} from "../features/api/apiSlice";
 import Form from "../form/Form";
 import "./card.css";
 
 const Card = ({ links }) => {
   const [isEdit, setIsEdit] = useState({});
+  const [addLink] = useAddHistoryLinksMutation();
   const [deleteLink] = useDeleteBucketLinksMutation();
 
   const [isModal, setIsModal] = useState(false);
 
   const modalHandler = () => {
     setIsModal(!isModal);
+  };
+
+  const historyHandler = (link) => {
+    addLink({
+      id: link.id,
+      name: link.name,
+      category: link.category,
+      link: link.link,
+    });
   };
 
   const editHandler = (value) => {
@@ -36,7 +49,10 @@ const Card = ({ links }) => {
         {links?.map((link) => (
           <div key={link.id} className="card">
             <h3>{link.name}</h3>
-            <div>
+            <div
+              className="iframe__player"
+              onClick={() => historyHandler(link)}
+            >
               <iframe
                 title={link.name}
                 src={link.link}
